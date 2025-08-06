@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "Pabu - Focus Time",
+  "version": "1.0.0",
+  "description": "A productivity app to help you focus on your projects and track your time",
+  "permissions": [
+    "storage",
+    "activeTab",
+    "tabs",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://*/*",
+    "http://*/*"
+  ],
+  "icons": {
+    "16": "assets/pabu_logo.png",
+    "48": "assets/pabu_logo.png",
+    "128": "assets/pabu_logo.png"
+  },
+  "action": {
+    "default_title": "Pabu - Focus Time",
+    "default_icon": "assets/pabu_logo.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
+  }
+}
